@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-[#f4e4ba]">
+    <main class="flex items-center justify-center min-h-[100vh]">
+        <form class="p-7 bg-white max-w-[350.4px]:">
+            <h2 class="text-xl font-bold">Currency Convertor</h2>
+            <div class="flex flex-col my-2">
+                <label for="amount">Enter Amount</label>
+                <input type="text" name="amount" class="border-2 border-gray-700 rounded-lg px-3 py-2 min-w-[300px] max-[100%]:">
+            </div>
+            <div class="flex justify-between items-center my-3 ">
+                <div class="flex flex-col">
+                    <label for="from">From</label>
+                    <div class="flex border-2 border-gray-700 rounded-lg p-1">
+                        <img class="flags w-7" src="https://flagsapi.com/US/flat/64.png" alt="Flag">
+                        <select id="from" name="from" class="w-[85px] outline-none">
+
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <img id="exchangeIcon" class="w-6 mt-6"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Exchange_font_awesome.svg/512px-Exchange_font_awesome.svg.png"
+                        alt="Is equivalent to">
+                </div>
+                <div class="flex flex-col">
+                    <label for="to">To</label>
+                    <div class="flex border-2 border-gray-700 rounded-lg p-1">
+                        <img class="flags w-7" src="https://flagsapi.com/IN/flat/64.png" alt="Flag">
+                        <select id="to" name="to" class="w-[85px] outline-none">
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="msg" class="my-4">
+                1 USD = 83.5888 INR
+            </div>
+            <div class="flex justify-center mt-7">
+                <button id="btn" class="bg-[#6b2c15] p-3 rounded-lg text-white">Get Exchange Rates</button>
+            </div>
+        </form>
+    </main>
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
